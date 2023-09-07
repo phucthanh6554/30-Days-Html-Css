@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #f2726a
+}
+
+body {
+    background: linear-gradient(45deg, #00853e, #50c878);
+    height: 100vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 320px;
+    height: 400px;
+    background-color: #242628;
+    margin: 0 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card__image {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    transform: translateY(28px);
+    transition: 0.25s;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+}
+
+.card__image:hover {
+    width: 100%;
+    height: 100%;
+    transform: unset;
+}
+
+.card__image:hover img {
+    border: unset;
+    border-radius: unset;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.card__name {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card__jobtitle {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.card__social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.card__social i {
+    margin: 0 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card__social i:hover {
+    color: var(--primary-color);
+}
+
+.card__action {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card__action button{
+    outline: none;
+    background: none;
+    padding: 12px 24px;
+    color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.card__action button:hover {
+    background-color: var(--primary-color);
+}
