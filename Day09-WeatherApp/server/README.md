@@ -1,0 +1,1 @@
+Create a .env file with content API_KEY = {your https://www.weatherapi.com/ api key}
