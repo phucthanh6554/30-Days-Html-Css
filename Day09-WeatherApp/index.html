@@ -5,17 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a1a4526be4.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body-hot" id="body">
     <div class="container">
         <div class="search-box">
-            <input type="text">
+            <input type="text" id="search-input">
+        </div>
 
-            <div class="location">
-                <h1>Iceland , IS</h1>
-                <small>9/6/2023, 8:13:08 PM</small>
+        <div class="location">
+            <h1 id="location_name"></h1>
+            <small id="location_time"></small>
+        </div>
+
+        <div class="temperature">
+            <h1 id="temperature">32</h1>
+        </div>
+
+        <h3 class="weather" id="weather">Cloud</h3>
+
+        <div class="measurement">
+            <div class="measurement-item">
+                <i class="fa-solid fa-eye"></i>
+                <p id="visibility">1708 (m)</p>
+            </div>
+
+            <div class="measurement-item">
+                <i class="fa-solid fa-wind"></i>
+                <p id="wind_kmh">20 (m/s)</p>
+            </div>
+
+            <div class="measurement-item">
+                <i class="fa-solid fa-cloud"></i>
+                <p id="cloud">100 (%)</p>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script src="script.js"></script>
