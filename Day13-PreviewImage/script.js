@@ -6,6 +6,7 @@ uploadInput.onchange = function(e) {
 
     if(file != null) {
         previewImage.setAttribute('src', URL.createObjectURL(file))
+        previewImage.style.display = 'block'
     }
 }
 
